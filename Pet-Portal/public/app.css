@@ -1,44 +1,66 @@
-body {
-	margin: 0;
-	padding: 0;
+* {
+  justify-content: center;
 }
 
- .App {
-  text-align: center;
-  font-family: monospace;
+.mainContainer {
+  height: 100vh;
+  width: 100%;
+  background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwcIBwgHBwcGBwgHBxYHBwgHBw8ICQgKIBEXIiAREx8YHiggGBolGxUVITEhJSkrOi4uFx8zODMtNygtOisBCgoKDQ0NDw0NDysZFRkrKystNysrKysrNysrKzcrKystKys3KysrKysrKysrKysrKysrLSsrKystKystKy0rLf/AABEIAOEA4QMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQAGBf/EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABsBAQEBAQEBAQEAAAAAAAAAAAMBAgAHBQQG/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAIBEv/aAAwDAQACEQMRAD8AiyjFf3TdSUUZVjIdk4sApUFslKsFZUDUkQKgak9UYrIqkooqgdk5VApUFslKsFZUDsmoRUDsnKo6srIqkmRUFuMzM5zMzOczMznPCiisr970OpNZQJA1JKMVkVSUIIqBqTlUVlQVSUUViBqTigUQNSSjFZFUlKQLKgak5VFYgqkllFUDUmoSqyGpNkVB7jMzORmZnOc/pBKr6D0mpOVYK6gqkpSCLKgak1gQogaklgxWRVJyqCyoGpOKKxBVJFAioGpNQhMhqSlIFlQVScUFiBqTWCqCqSIIqBqTYVZFuKzM5HOroq+k9PqSUZVZFUnKsApUDUlFHV1BVJxZQXUDsmo6rIakoQLEFUnKsFUDslFgrEFUkQKgak5VGLGQ1JEEqoKpOKBSoGpJdFUDskyMjHLnIoxY+k9SqTUIUQWySjFQNSUKArItk4oxYgaklgrKgdk1gQkFUlFgxWQ7JEEqoLZNRWIGpJYMVBbJrKEVA7JxRlVkOycqgsQVSWsjOY5c6soRX0XqVSajKqBqShAsQVSaygUQNSSwZVZDUmoSqgqk4sFYgakilBUFUmsoQogaklgyqyGpNYEJBVJLBioGpIpQlVBVJqMqshqSYVcxy5xYKvpPUqkilCKyGpOLAlJBVJRRWIGpIoEVBVJrKMVA1JFoSrGQ1J6oSlKgqkl0YsQNSUKBFQVSajKrIakigRYgak4sAogqkllFUDUlrIiMcudlUV19J6lUmoKgqk1gqgak1CVWQ7JqKoLZJRWIGpNZQhIKpKLBlVkNSahKqB2TlUV1BVJLKKoGpNYEpIKpKLBishqTUFQNSWsjOZ5c7FlAo+i9R2SUYqC2ShAuoGpNYBRA1JRYOrGRbJxQhIHZKKMWIKpIoCoHZNYEKIKpJR1WQ1JyqEWIHZNYKxBVJxQWIHZNRVBVJawqjHLnIorK+k9SqSIFZDUmoEgakosFYgqk4oKgak1FdQNSRArIqk1AkDUlFgrKgqk4oLEDUmsFWQ1JEEVBVJyqBRA1JSqK6gqkmRkY5c5FRn0nqO4cqgUqCqSiwViCqSKArIak4oxUDUlFFYgqk4sAogakosGLGQ1JEEVBVJxRWIGpKUgWVBVJxYBIGpJRWMiqSIFiBqS1kZzHLn2Zn0HprKjOTcKUgWIKpOVRWVA1JLBVBVJrAlVkOycqiqBqSlIFlQVSaiqBqSUYrIqk4oRYgak5VgrKgak4sBZUFUmoqgdkmFUY5eCzM/e9HZmZzmVGcm4UWCsQWycqhKUQWyUWUViB2SIIrIak1DSQVSUqwV1A1JrAWILZNZRioGpIglVkVScqgUqB2SlUV1A1JayMjHLxGZn7noLMzOczMznMqM5NwosGKg6koQaqBqTUViCqSWUVQNSUIFZDUnKoxYgqkiBYgak10CQVSSiqBqSlLQWMiqSZGcxy8dmZ+x/dMzM5zMzOczMznNFZnM0sKMyCpYrMyGlixmcGlKIzIqJWZA6sJmQWrFjMyGlWMyB1YTMgqVmZGH//2Q==");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
 }
 
-.App-logo {
-  height: 180px;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dataContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bio {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  width: 375px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.petButton {
+  cursor: pointer;
+  margin-top: 16px;
+  margin-left: 137px;
+  padding: 17px;
+  border: 0;
+  border-radius: 50px;
+  width: 170px;
+  background-color: white;
+  font-weight: 600;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+}
+
+.petButton:hover {
+ background: rgb(194, 194, 194);
+}
+
+.text 
+{  
+   font-family: 'Times New Roman', Times, serif;
+   padding: 10px;
+   font-size: 16px; 
+   border-radius: 5px;
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 7.5px );
+   -webkit-backdrop-filter: blur( 7.5px );
 }
