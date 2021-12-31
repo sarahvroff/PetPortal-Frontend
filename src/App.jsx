@@ -91,6 +91,10 @@ const App = () => {
   }
 
   const pet = async () => {
+    
+    alert('Pet Photo Submitted Successfully!');
+    event.preventDefault();
+    
     try {
       const { ethereum } = window;
 
